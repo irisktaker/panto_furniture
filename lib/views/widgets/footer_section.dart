@@ -60,43 +60,47 @@ class FooterSection extends StatelessWidget {
                 const Spacer(),
                 buildColumn(list: furniture, title: "Furniture"),
                 const Spacer(),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Follow Us',
-              style:  TextStyle(fontSize: 17, color:   Color(0xFFF6973F)),
-            ),
-            const SizedBox(height: 20),
-            Expanded(
-                child: SizedBox(
-                    width: 130,
-                    child: ListView.builder(
-                        itemCount: followUs.length,
-                        itemBuilder: (context, index) => Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            TextButton(
-                              onPressed: () {},
-                              child: Row(
-                                children: [
-                                  Image.asset(followUs[index]['icon']!, width: 20, height: 20,),
-                                  const SizedBox(width: 8),
-                                  Text(
-                                    followUs[index]['title']!,
-                                    style: const TextStyle(
-                                      color: Color(0xFF1E1E1E),
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        )))),
-          ],
-        ),
-
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Follow Us',
+                      style: TextStyle(fontSize: 17, color: Color(0xFFF6973F)),
+                    ),
+                    const SizedBox(height: 20),
+                    Expanded(
+                        child: SizedBox(
+                            width: 130,
+                            child: ListView.builder(
+                                itemCount: followUs.length,
+                                itemBuilder: (context, index) => Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        TextButton(
+                                          onPressed: () {},
+                                          child: Row(
+                                            children: [
+                                              Image.asset(
+                                                followUs[index]['icon']!,
+                                                width: 20,
+                                                height: 20,
+                                              ),
+                                              const SizedBox(width: 8),
+                                              Text(
+                                                followUs[index]['title']!,
+                                                style: const TextStyle(
+                                                  color: Color(0xFF1E1E1E),
+                                                  fontSize: 15,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    )))),
+                  ],
+                ),
               ],
             ),
           ),
@@ -150,7 +154,7 @@ class FooterSection extends StatelessWidget {
       children: [
         Text(
           title,
-          style: const TextStyle(fontSize: 17, color:   Color(0xFFF6973F)),
+          style: const TextStyle(fontSize: 17, color: Color(0xFFF6973F)),
         ),
         const SizedBox(height: 20),
         Expanded(

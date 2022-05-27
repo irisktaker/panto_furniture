@@ -149,7 +149,7 @@ class _BestSellingProductsSectionState
                               ),
                               const SizedBox(height: 6.0),
                               RatingBar.builder(
-                                initialRating: 3,
+                                initialRating: 5,
                                 minRating: 0,
                                 direction: Axis.horizontal,
                                 allowHalfRating: true,

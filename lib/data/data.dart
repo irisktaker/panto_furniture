@@ -1,5 +1,6 @@
 import 'package:panto_furniture/models/best_selling_products.dart';
 import 'package:panto_furniture/models/choosing_us.dart';
+import 'package:panto_furniture/models/reviews.dart';
 
 List<ChoosingUs> whyChoosingUs = [
   ChoosingUs(
@@ -43,5 +44,32 @@ List<BestSellingProducts> bestSellingProducts = [
     productName: "Nyantuy Chair",
     productImage: "assets/images/img_4.png",
     price: 921,
+  ),
+];
+
+List<Reviews> reviews = [
+  Reviews(
+    image: "assets/images/img_12.png",
+    bgImage: "assets/images/img_9.png",
+    title: "Bang Upin",
+    subtitle: "Pedagang Asongan",
+    description:
+        "“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“",
+  ),
+  Reviews(
+    image: "assets/images/img_14.png",
+    bgImage: "assets/images/img_10.png",
+    title: "Ibuk Sukijan",
+    subtitle: "Ibu Rumah Tangga",
+    description:
+        "“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“",
+  ),
+  Reviews(
+    image: "assets/images/img_15.png",
+    bgImage: "assets/images/img_11.png",
+    title: "Mpok Ina",
+    subtitle: "Karyawan Swasta",
+    description:
+        "“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“",
   ),
 ];

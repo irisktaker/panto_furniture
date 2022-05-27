@@ -3,6 +3,7 @@ import 'package:panto_furniture/views/widgets/best_selling_products_section.dart
 import 'package:panto_furniture/views/widgets/choosing_us_section.dart';
 import 'package:panto_furniture/views/widgets/footer_section.dart';
 import 'package:panto_furniture/views/widgets/landing_page.dart';
+import 'package:panto_furniture/views/widgets/reviews_section.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -28,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-  return Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Scrollbar(
           controller: _scrollBarController,
@@ -39,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
               LandingPage(),
               ChoosingUsSection(),
               BestSellingProductsSection(),
+              ReviewsSection(),
               FooterSection(),
             ],
           ),
