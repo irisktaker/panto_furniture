@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:panto_furniture/views/widgets/best_selling_products_section.dart';
 import 'package:panto_furniture/views/widgets/choosing_us_section.dart';
+import 'package:panto_furniture/views/widgets/experience_section.dart';
 import 'package:panto_furniture/views/widgets/footer_section.dart';
 import 'package:panto_furniture/views/widgets/landing_page.dart';
+import 'package:panto_furniture/views/widgets/materials_section.dart';
 import 'package:panto_furniture/views/widgets/reviews_section.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -40,6 +42,8 @@ class _HomeScreenState extends State<HomeScreen> {
               LandingPage(),
               ChoosingUsSection(),
               BestSellingProductsSection(),
+              ExperienceSection(),
+              MaterialSection(),
               ReviewsSection(),
               FooterSection(),
             ],
